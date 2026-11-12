@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VYALUM | Vidrios y Aluminios — Ventanas, Canceles, Espejos y Fachadas</title>
+<meta name="description" content="VYALUM, vidrios y aluminios: ventanas, puertas, canceles de baño, espejos, fachadas y barandales. Trabajamos para hogares, negocios y constructoras. Cotiza por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VYALUM — Vidrios y Aluminios">
+<meta property="og:description" content="Ventanas, puertas, canceles, espejos, fachadas y barandales de vidrio y aluminio. Cotización por WhatsApp.">
+<meta property="og:url" content="https://vyalummx.github.io/vyalum/">
+<meta property="og:image" content="https://vyalummx.github.io/vyalum/img/portada.jpg">
+<link rel="icon" href="img/icono.jpg">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b1220">
+<style>
+:root{
+  --bg:#0b1220; --bg2:#0d1626; --panel:#121e33; --panel2:#16263f;
+  --txt:#edf3fa; --mut:#9db4cc; --acc:#38bdf8; --acc2:#7dd3fc;
+  --line:rgba(255,255,255,.09); --rad:16px; --wa:#25d366;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:hidden;overflow-x:clip}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+h2.tit{font-size:clamp(1.5rem,4.5vw,2.25rem);font-weight:800;margin-bottom:6px}
+p.sub{color:var(--mut);margin-bottom:22px;max-width:46rem}
+section{padding:52px 0}
+.kick{color:var(--acc2);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem;margin-bottom:6px}
+header{position:sticky;top:0;z-index:60;background:rgba(11,18,32,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hbar{display:flex;align-items:center;gap:14px;padding:10px 0}
+.hbar img.logo{height:44px;width:auto}
+nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:8px 12px;border-radius:10px;color:var(--mut);font-weight:600;font-size:.94rem}
+nav a:hover{color:var(--txt);background:var(--panel)}
+@media(max-width:820px){nav{display:none}}
+.hero{position:relative;padding:56px 0 50px;background:radial-gradient(880px 460px at 90% -10%,rgba(56,189,248,.18),transparent 60%),var(--bg2);border-bottom:1px solid var(--line);overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center}
+@media(max-width:880px){.hero .grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2rem,6vw,3.1rem);font-weight:900;line-height:1.08}
+.hero h1 .c{color:var(--acc)}
+.hero p.lead{color:var(--mut);font-size:1.07rem;margin:15px 0 22px;max-width:34rem}
+.hero .foto{border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.hero .foto img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:12px;font-weight:800;font-size:1rem;border:1px solid transparent;cursor:pointer}
+.btn-wa{background:var(--wa);color:#052a10}
+.btn-acc{background:var(--acc);color:#03222f}
+.btn-ghost{background:transparent;color:var(--txt);border-color:var(--line)}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:11px 16px;min-width:118px}
+.stat b{display:block;font-size:1.3rem;color:var(--acc2)}
+.stat span{color:var(--mut);font-size:.84rem;font-weight:600}
+.servs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.serv{background:var(--panel);border:1px solid var(--line);border-radius:var(--rad);overflow:hidden}
+.serv img{width:100%;height:180px;object-fit:cover}
+.serv .sb{padding:16px 18px}
+.serv h3{font-size:1.12rem;font-weight:800}
+.serv p{color:var(--mut);font-size:.93rem;margin-top:4px}
+.serv .pedir{display:inline-block;margin-top:11px;font-weight:800;color:var(--acc2)}
+.banda{background:linear-gradient(120deg,#0e2233,#123049);border:1px solid rgba(56,189,248,.35);border-radius:20px;padding:28px}
+.banda h3{font-size:1.4rem;font-weight:800;margin-bottom:6px}
+.banda p{color:var(--mut);max-width:46rem}
+.banda ul{margin:14px 0 18px 18px;color:var(--txt)}
+.banda li{margin:5px 0}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.paso{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+.paso b{display:flex;align-items:center;gap:10px;font-size:1.05rem}
+.paso b i{font-style:normal;background:var(--acc);color:#03222f;width:30px;height:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:900;flex:none}
+.paso p{color:var(--mut);font-size:.93rem;margin-top:7px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.gal figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);cursor:pointer}
+.gal img{width:100%;height:210px;object-fit:cover;transition:transform .25s}
+.gal figure:hover img{transform:scale(1.04)}
+form.cot{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;max-width:640px}
+form.cot label{display:block;font-weight:700;margin:0 0 6px}
+form.cot select,form.cot input,form.cot textarea{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:11px;color:var(--txt);padding:12px 14px;font-size:1rem;margin-bottom:15px;outline:none}
+form.cot select:focus,form.cot input:focus,form.cot textarea:focus{border-color:var(--acc)}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.dos{grid-template-columns:1fr}}
+.contacto{text-align:center}
+.contacto .grande{font-size:clamp(1.6rem,5vw,2.3rem);font-weight:900;margin-bottom:8px}
+footer{border-top:1px solid var(--line);padding:26px 0 90px;color:var(--mut);font-size:.9rem;text-align:center}
+.wafloat{position:fixed;right:16px;bottom:16px;z-index:90;background:var(--wa);color:#fff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.45)}
+.wafloat svg{width:32px;height:32px}
+#lb{position:fixed;inset:0;background:rgba(3,6,12,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:16px}
+#lb.on{display:flex}
+#lb img{max-width:min(920px,100%);max-height:86vh;border-radius:10px}
+#lb button{position:absolute;top:14px;right:14px;background:var(--panel);border:1px solid var(--line);color:var(--txt);border-radius:10px;padding:9px 14px;font-weight:800;cursor:pointer}
+.rv{opacity:0;transition:opacity .8s cubic-bezier(.22,.8,.28,1),transform .8s cubic-bezier(.22,.8,.28,1)}
+.rv.L{transform:translateX(-84px)}.rv.R{transform:translateX(84px)}
+.rv.in{opacity:1;transform:translateX(0)}
+@media(max-width:720px){.rv.L{transform:translateX(-40px)}.rv.R{transform:translateX(40px)}.rv.in{transform:translateX(0)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hbar">
+    <img class="logo" src="img/logo-simbolo.png" alt="VYALUM">
+    <span style="font-weight:900;font-size:1.3rem;letter-spacing:2px">VYALUM</span>
+    <nav>
+      <a href="#servicios">Servicios</a><a href="#constructoras">Constructoras</a><a href="#trabajos">Trabajos</a><a href="#cotizar">Cotizar</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap grid">
+    <div class="rv L in">
+      <h1>Vidrios y aluminios <span class="c">a la medida</span> de tu proyecto</h1>
+      <p class="lead">En <b>VYALUM</b> fabricamos e instalamos ventanas, puertas, canceles, espejos, fachadas y barandales de vidrio y aluminio para hogares, negocios y obra. Cotiza en minutos por WhatsApp.</p>
+      <div class="cta">
+        <a class="btn btn-wa" href="https://wa.me/525525241799?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20vidrio%20y%20aluminio" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#trabajos">Ver trabajos</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>+5,200</b><span>seguidores en Facebook</span></div>
+        <div class="stat"><b>2</b><span>sectores: hogares y obra</span></div>
+        <div class="stat"><b>A medida</b><span>fabricación e instalación</span></div>
+      </div>
+    </div>
+    <div class="foto rv R in"><img src="img/portada.jpg" alt="Trabajo de vidrio y aluminio de VYALUM"></div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="kick rv L">Servicios</div>
+    <h2 class="tit rv L">Todo en vidrio y aluminio</h2>
+    <p class="sub rv L">Fabricación a la medida e instalación profesional. Toca «Cotizar» en cualquier servicio y te atendemos por WhatsApp.</p>
+    <div class="servs" id="servs"></div>
+  </div>
+</section>
+
+<section id="constructoras" style="padding-top:6px">
+  <div class="wrap">
+    <div class="banda rv L">
+      <h3>¿Tienes una constructora o un proyecto en obra?</h3>
+      <p>También trabajamos con constructoras y contratistas: suministramos e instalamos vidrio y aluminio en volumen para desarrollos, edificios y obra comercial, con cotización por proyecto.</p>
+      <ul>
+        <li>Ventanas, puertas y cancelería de aluminio para obra nueva</li>
+        <li>Fachadas, barandales y canceles en volumen</li>
+        <li>Cotización por proyecto y atención directa por WhatsApp</li>
+      </ul>
+      <a class="btn btn-acc" href="https://wa.me/525525241799?text=Hola%2C%20soy%20de%20una%20constructora%20y%20quiero%20cotizar%20vidrio%20y%20aluminio%20para%20un%20proyecto" target="_blank" rel="noopener">Cotizar para mi proyecto</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:6px">
+  <div class="wrap">
+    <div class="kick rv L">Así trabajamos</div>
+    <h2 class="tit rv L">De la medida a la instalación</h2>
+    <p class="sub rv L">Un proceso simple y claro, sin vueltas.</p>
+    <div class="pasos">
+      <div class="paso rv L"><b><i>1</i> Cotización</b><p>Nos escribes por WhatsApp con lo que necesitas y, si tienes, las medidas aproximadas. Te damos tu cotización.</p></div>
+      <div class="paso rv R"><b><i>2</i> Medición y fabricación</b><p>Confirmamos medidas y fabricamos tus piezas de vidrio y aluminio a la medida exacta de tu espacio.</p></div>
+      <div class="paso rv L"><b><i>3</i> Instalación</b><p>Instalamos y dejamos todo funcionando, limpio y listo para usarse.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="trabajos" style="padding-top:6px">
+  <div class="wrap">
+    <div class="kick rv L">Nuestro trabajo</div>
+    <h2 class="tit rv L">Trabajos realizados</h2>
+    <p class="sub rv L">Una muestra de lo que hacemos. Toca una foto para verla grande y síguenos en Facebook para ver más.</p>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section id="cotizar" style="padding-top:6px">
+  <div class="wrap">
+    <div class="kick rv L">Cotiza en minutos</div>
+    <h2 class="tit rv L">Arma tu cotización</h2>
+    <p class="sub rv L">Llena los datos y se arma tu mensaje de WhatsApp listo para enviar.</p>
+    <form class="cot rv L" id="formCot">
+      <label for="tipo">¿Qué necesitas?</label>
+      <select id="tipo" required>
+        <option value="">Elige una opción</option>
+        <option>Ventana de aluminio</option>
+        <option>Puerta de aluminio</option>
+        <option>Cancel de baño</option>
+        <option>Espejo a la medida</option>
+        <option>Fachada de vidrio</option>
+        <option>Barandal de vidrio o aluminio</option>
+        <option>Proyecto para constructora</option>
+        <option>Otro trabajo de vidrio y aluminio</option>
+      </select>
+      <div class="dos">
+        <div><label for="ancho">Ancho aproximado</label><input id="ancho" placeholder="Ej. 1.20 m"></div>
+        <div><label for="alto">Alto aproximado</label><input id="alto" placeholder="Ej. 1.50 m"></div>
+      </div>
+      <label for="detalle">Cuéntanos más (opcional)</label>
+      <textarea id="detalle" rows="3" placeholder="Color, tipo de vidrio, para cuándo lo necesitas, etc."></textarea>
+      <button class="btn btn-wa" type="submit" style="width:100%;justify-content:center">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section class="contacto" id="contacto" style="padding-top:6px">
+  <div class="wrap">
+    <div class="grande rv L">¿Empezamos tu proyecto?</div>
+    <p class="sub rv L" style="margin-left:auto;margin-right:auto">Escríbenos por WhatsApp o síguenos en Facebook como Vidriera Vera; hoy somos VYALUM, con la misma experiencia de siempre.</p>
+    <div class="cta" style="justify-content:center">
+      <a class="btn btn-wa rv L" href="https://wa.me/525525241799?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20vidrio%20y%20aluminio" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost rv R" href="https://www.facebook.com/vidriera.vera" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><img src="img/logo-full.webp" alt="VYALUM" style="height:120px;width:auto;margin:0 auto 14px;border-radius:14px">VYALUM — Vidrios y Aluminios (antes Vidriera Vera).<br>Cotizaciones y atención por WhatsApp.</div>
+</footer>
+
+<a class="wafloat" href="https://wa.me/525525241799?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20vidrio%20y%20aluminio" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.1c1.4.8 3 1.2 4.7 1.2 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.5 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.2z"/></svg>
+</a>
+
+<div id="lb"><button id="lbX">Cerrar ✕</button><img id="lbImg" alt="Foto de trabajo"></div>
+
+<script>
+const WA = '525525241799';
+const SERVICIOS = [
+  { n: 'Ventanas de aluminio', d: 'Ventanas corredizas y de proyección a la medida, con vidrio claro, tintex o esmerilado.', img: 'img/serv-ventanas.jpg' },
+  { n: 'Puertas de aluminio', d: 'Puertas para interior y exterior, con acabados que combinan con tu fachada o tu obra.', img: 'img/serv-puertas.jpg' },
+  { n: 'Canceles de baño', d: 'Canceles de vidrio templado y aluminio que le dan un acabado moderno a tu baño.', img: 'img/serv-canceles.jpg' },
+  { n: 'Espejos a la medida', d: 'Espejos para baños, salas, negocios y gimnasios, cortados e instalados a la medida.', img: 'img/serv-espejos.jpg' },
+  { n: 'Fachadas de vidrio', d: 'Fachadas y frentes comerciales de vidrio y aluminio para negocios y edificios.', img: 'img/serv-fachadas.jpg' },
+  { n: 'Barandales', d: 'Barandales de vidrio y aluminio para escaleras, balcones y terrazas, seguros y elegantes.', img: 'img/serv-barandales.jpg' },
+];
+const GALERIA = [
+  { img: 'img/trabajo-1.jpg', t: 'Trabajo de VYALUM' },
+  { img: 'img/trabajo-2.jpg', t: 'Trabajo de VYALUM' },
+  { img: 'img/trabajo-3.jpg', t: 'Trabajo de VYALUM' },
+  { img: 'img/trabajo-4.jpg', t: 'Trabajo de VYALUM' },
+  { img: 'img/trabajo-5.jpg', t: 'Trabajo de VYALUM' },
+  { img: 'img/trabajo-6.jpg', t: 'Trabajo de VYALUM' },
+];
+const $ = id => document.getElementById(id);
+$('servs').innerHTML = SERVICIOS.map((s, i) => `
+  <article class="serv rv ${i % 2 ? 'R' : 'L'}">
+    <img loading="lazy" src="${s.img}" alt="${s.n}">
+    <div class="sb"><h3>${s.n}</h3><p>${s.d}</p>
+    <a class="pedir" href="https://wa.me/${WA}?text=${encodeURIComponent('Hola, quiero cotizar: ' + s.n)}" target="_blank" rel="noopener">Cotizar →</a></div>
+  </article>`).join('');
+$('gal').innerHTML = GALERIA.map((g, i) => `
+  <figure class="rv ${i % 2 ? 'R' : 'L'}"><img loading="lazy" src="${g.img}" alt="${g.t}" data-full="${g.img}"></figure>`).join('');
+document.querySelectorAll('#gal img').forEach(im => im.addEventListener('click', () => {
+  $('lbImg').src = im.dataset.full; $('lb').classList.add('on');
+}));
+$('lbX').addEventListener('click', () => $('lb').classList.remove('on'));
+$('lb').addEventListener('click', e => { if (e.target === $('lb')) $('lb').classList.remove('on'); });
+$('formCot').addEventListener('submit', e => {
+  e.preventDefault();
+  const t = $('tipo').value, a = $('ancho').value.trim(), al = $('alto').value.trim(), d = $('detalle').value.trim();
+  let msg = `Hola, quiero cotizar: ${t}.`;
+  if (a || al) msg += ` Medidas aproximadas: ${a || '—'} de ancho x ${al || '—'} de alto.`;
+  if (d) msg += ` Detalle: ${d}`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank');
+});
+const obs = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+}), { threshold: 0.1 });
+document.querySelectorAll('.rv:not(.in)').forEach(el => obs.observe(el));
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>
