@@ -1,5 +1,5 @@
 // VYALUM — Vidrios y Aluminios
-const CACHE = 'vyalum-v7';
+const CACHE = 'vyalum-v8';
 const CORE = ['./', './index.html', './manifest.json', './img/logo-simbolo.png', './img/logo-full.jpg', './img/icono.jpg', './img/portada.jpg'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
