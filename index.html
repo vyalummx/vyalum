@@ -97,39 +97,6 @@ footer{border-top:1px solid var(--line);padding:26px 0 90px;color:var(--mut);fon
 </style>
 </head>
 <body>
-<div id="aviso-pago" style="position:fixed;top:0;left:0;right:0;z-index:3000;background:#7a1010;color:#fff;text-align:center;padding:12px 16px;font:600 15px/1.5 system-ui,sans-serif;box-shadow:0 2px 14px rgba(0,0,0,.45)">
-  ⚠ COMUNICADO — Por seguridad, esta página será <u>bloqueada por falta de pago</u>. Realiza tu pago antes de las <b>8:58 p.m.</b> de hoy. Una vez realizado el pago, tu página será desbloqueada en 15 minutos.<br>
-  Tiempo restante: <span id="aviso-count" style="font-size:19px;font-weight:800;letter-spacing:1px">--:--:--</span>
-</div>
-<div id="bloqueo-pago" style="display:none;position:fixed;inset:0;z-index:4000;background:#0d0d0f;color:#fff;text-align:center;padding:40px 24px;font-family:system-ui,sans-serif">
-  <div style="font-size:64px;margin-top:12vh">🔒</div>
-  <h2 style="font-size:28px;margin:18px 0 10px">Bloqueado hasta que realice el pago</h2>
-  <p style="opacity:.85;max-width:460px;margin:0 auto;line-height:1.6">Por seguridad, esta página fue bloqueada por falta de pago. Una vez realizado el pago, será desbloqueada en 15 minutos.</p>
-</div>
-<script>
-(function(){
-  var LIMITE = Date.parse('2026-11-13T20:58:00-06:00');
-  var aviso = document.getElementById('aviso-pago');
-  var bloqueo = document.getElementById('bloqueo-pago');
-  var count = document.getElementById('aviso-count');
-  document.body.style.paddingTop = '86px';
-  function pad(n){ return (n<10?'0':'')+n; }
-  function tick(){
-    var falta = LIMITE - Date.now();
-    if (falta <= 0){
-      aviso.style.display = 'none';
-      bloqueo.style.display = 'block';
-      document.body.style.paddingTop = '0';
-      document.body.style.overflow = 'hidden';
-      return;
-    }
-    var s = Math.floor(falta/1000);
-    count.textContent = pad(Math.floor(s/3600)) + ':' + pad(Math.floor(s%3600/60)) + ':' + pad(s%60);
-    setTimeout(tick, 1000);
-  }
-  tick();
-})();
-</script>
 <header>
   <div class="wrap hbar">
     <img class="logo" src="img/logo-header.jpg" alt="VYALUM — Vidrio y Aluminio">
